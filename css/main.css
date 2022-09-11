@@ -103,65 +103,80 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #AACC00;
-  padding: 64px;
   overflow: hidden;
+  padding: 32px;
 }
 
 .content{
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  align-content: center;
-  justify-content: center;
-  border-style: solid;
+  align-items: center !important;
+  border-style: dotted;
   border-color: #FFFAFF;
   border-width: 8px;
-  padding: 64px;
   overflow: hidden;
+  padding: 40px;
+}
+
+form{
+  display: grid;
+  grid-gap: 2rem;
 }
 
 .right{
   grid-column: 2;
+  grid-row: 1;
+
 }
 
 .section2{
   grid-column: 1;
   grid-row: 1;
-  padding-top: 400px;
+  width: 100%;
+  padding-top: 300px;
 }
 
-.section2 h1{
-  font-size: 1.8vw;
-}
 
 .right h1{  
   font-family: manofa,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #FFFAFF;
-  text-align: center;
-  font-size: 10rem;
+  text-align: right;
+  font-size: 12rem;
+  letter-spacing: 1px;
   margin: 0;
-  padding-bottom: 100px;
 }
 
 span{
   color: #5C5C62;
   font-weight: 400;
-  letter-spacing: 4px;
-  font-size: 2.5vw;
+  letter-spacing: 6px;
+  font-size: 2rem;
   display: block;
 }
 
-.content h2{
+.tagline{
   font-family: manofa,sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 2.3vw;
+  font-size: 2rem;
   color: #2A2B2E;
-  text-align: center;
+  text-align: left;
+  letter-spacing: 2px;
   margin: 0;
+  line-height: 2;
 }
+
+.notified{
+  font-family: montserrat,sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/*circles*/
 
 .circle1 img{
   z-index: -1;
@@ -173,7 +188,7 @@ span{
 
 .circle2 img{
   z-index: -1;
-  top: 70vh;
+  top: 62vh;
   left: 100vh;
   position: absolute;
   height: 30vh;
@@ -181,7 +196,7 @@ span{
 
 .circle3 img{
   z-index: -1;
-  top: 15vh;
+  top: 13vh;
   left: 120vh;
   position: absolute;
   height: 40vh;
@@ -232,6 +247,7 @@ form h1{
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 4px;
+  font-family: montserrat,sans-serif;
 }
 
 
@@ -323,7 +339,7 @@ form h1{
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
   
   body{
     padding: 32px;
@@ -435,7 +451,7 @@ form{
     font-size: 1rem;
     letter-spacing: 1px;
   }
-}
+}*/
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
